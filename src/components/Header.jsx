@@ -3,6 +3,7 @@ import MenuItem from './MenuItem';
 import { FaHome } from "react-icons/fa";
 import { FaAccessibleIcon } from "react-icons/fa";
 import Link from "next/link";
+import DarkMood from './DarkMood';
 
 const Header = () => {
     return (
@@ -13,6 +14,7 @@ const Header = () => {
                     <MenuItem title="About" url="/about" icon={<FaAccessibleIcon />}></MenuItem>
                 </div>
                 <div className='flex gap-2 items-center'>
+                    <DarkMood></DarkMood>
                     <Link href="/"><span className='font-bold uppercase bg-amber-500 px-3 py-1 rounded-lg'>imdb</span></Link>
                     <span className='uppercase hidden sm:inline'>clone</span>
                 </div>
